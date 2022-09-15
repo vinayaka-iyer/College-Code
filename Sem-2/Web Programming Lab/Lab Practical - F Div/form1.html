@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-color: black;
+            border-color: rgb(197, 50, 111);
+            color: rgb(197, 50, 111);
+            font-family: Helvetica, sans-serif;
+        }
+        
+        .container{
+            width: 60vw;
+            margin: 0 auto;
+        }
+
+        fieldset{
+            border: 1px solid rgb(197, 50, 111);
+            border-radius: 30px;
+            box-shadow: 0px 0px 10px 1px rgb(197, 50, 111);
+        }
+
+        h1{
+            text-align: center;
+            margin: 20px 0px;
+        }
+
+        input{
+            border: 1px solid rgb(197, 50, 111);
+            background-color: transparent;
+            color: rgb(197, 50, 111);
+            margin: 10px 3rem;
+            padding: 10px;
+            border-radius: 10px 0px 10px 10px;
+
+
+        }
+        legend{
+            font-weight: bold;
+            margin-left: 10px;
+            border: 1px solid rgb(197, 50, 111);
+            padding: 10px;
+            border-radius: 0px 10px 10px 10px;
+            background-color: black;
+        }
+        input:focus {
+            outline: none /* Removes the border when the input is clicked */
+        }
+
+        .flex{
+            display: flex;
+            justify-content:center; 
+            flex-wrap: wrap;
+        }
+
+        .flex2{
+            display: flex;
+            justify-content:center;
+            flex-wrap: wrap;
+        }
+
+        input[type="checkbox"]{
+            margin: 20px;
+            margin-right: 0;
+            padding: 0px;
+        }
+        input[type="button"]{
+            width: 100px;
+            margin: 20px;
+            font-weight: bold;
+        }
+        input[type="button"]:hover{
+            color: rgb(12, 12, 161);
+            background-color: rgb(224, 170, 193);
+            box-shadow: 0px 0px 10px 1px rgb(228, 98, 152);
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Social Networking Site Form</h1>
+        <form action="" method="post" id="form1"  onsubmit="return false">
+            <fieldset>
+                <legend>Registration</legend>
+                <div class="flex">
+                    <input type="text" name="firstname" id="firstname" placeholder="First Name"><br>
+                    <input type="text" name="lastname" id="lastname" placeholder="Last Name"><br>
+                    <input type="text" name="emailid" id="emailid" placeholder="Email Id"><br>
+                </div>
+                
+                <div class="flex2">
+                    <input type="password" name="password" id="password" placeholder="Password"><br>
+                    <input type="password" name="passwordre" id="passwordre" placeholder="Re-Enter Password"><br>
+                </div>
+
+                <input type="checkbox" name="termsandcondtions" id="termsandcondtions">
+                <label for="termsandcondtions">Terms and Conditions</label><br>
+                <input type="submit" value="Register">
+                <input type="button" value="Clear">
+            </fieldset>
+        </form>
+    </div>
+
+    <script>
+      let firstname = document.getElementById("firstname");
+      let lastname = document.getElementById("lastname");
+      let emailid = document.getElementById("emailid");
+      let password = document.getElementById("password");
+      let passwordre = document.getElementById("passwordre");
+
+      let form = document.getElementById("form1");
+      form.addEventListener('submit', (e) =>{
+        let messages = []
+        if (firstname.value ==='' || firstname.value=== null){
+        messages.push("firstname is required")
+        console.log(messages)
+
+        return false;
+        }
+        console.log(messages)
+      })
+      alert(messages)
+
+    </script>
+</body>
+</html>

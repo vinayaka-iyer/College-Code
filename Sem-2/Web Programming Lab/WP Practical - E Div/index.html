@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Library Management</title>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Library Management</h1>
+        <h3>By Vinayaka Iyer, U21CS017</h3>
+    </div>
+
+    <div class="container">
+        <img src="library.jpg" alt="Central Library">
+
+        <div class="subheader">
+            <h2>Add New Subject</h2>
+
+            <form action="" id="form">
+                <select id="department" name="department">
+                    <option value="Select Department">Select Department</option>
+                    <option value="Computer Science and Engineering">Computer Science and Engineering</option>
+                    <option value="Mechanical Engineering">Mechanical Engineering</option>
+                    <option value="Electrical Engineering">Electrical Engineering</option>
+                </select>
+                <input type="text" name="subjectname" id="subjectname" placeholder="Subject Name">
+                <input type="submit" value="Add Subject">
+            </form>
+
+        </div>
+
+
+
+        <div class="main">
+            <div>
+                <h1>Central Library</h1>
+                <p>The Central Library is one of the key central facilities of the Institute. The primary goal of the
+                    Library is to
+                    support the educational, research and innovation programs of the Institute by providing physical and
+                    digital access
+                    to intellectual information.
+                    The Library is well-managed and acts as the knowledge hub of the entire Institute. It has a rich and
+                    comprehensively
+                    high quality of information resources in the field of Science and Technology.
+                </p>
+                <p>
+                    The new building is planned on modular principles based on the requirements of the Institute
+                    Library. It has three
+                    spacious floors. The new Library building is centrally air-conditioned and occupied with three lifts
+                    operating in
+                    the building. For better security, the library building is integrated with RFID system, CCTV camera
+                    and fire alarm
+                    system.
+                </p>
+            </div>
+
+            <div>
+                <h1>Department Wise Subjects</h1>
+
+                <ul>
+                    <li>Computer Science and Engineering Department
+                        <ol id="cse">
+                            <li>Web Programming</li>
+                            <li>Fundamentals of Computer Programming</li>
+                        </ol>
+                    </li>
+                    <li>Mechanical Engineering Department
+                        <ol id="mech">
+                            <li>Web Programming</li>
+                            <li>Fundamentals of Computer Programming</li>
+                        </ol>
+                    </li>
+                    <li>Electrical Engineering Department
+                        <ol id="eee">
+                            <li>Web Programming</li>
+                            <li>Fundamentals of Computer Programming</li>
+                        </ol>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div>
+            <h3>Sardar Vallabhbhai National Institute of Technology, Surat</h3>
+            <p>End Semester Practical Exams</p>
+        </div>
+
+        <div>
+            <h3>Computer Science and Engineering Department</h3>
+            <p>B.Tech - I, Second Semester</p>
+            <p>Course: Web Programming (CSCS113S2)</p>
+        </div>
+
+        <div>
+            <h3>Student Details</h3>
+            <p>Name: Vinayaka Iyer</p>
+            <p>Admission No: U21CS017</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

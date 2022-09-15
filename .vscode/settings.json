@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "stack.C": "cpp",
+        "Stack_Array.C": "cpp",
+        "Stack_LinkedList.C": "cpp"
+    }
+}

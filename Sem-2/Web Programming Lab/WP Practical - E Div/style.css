@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: lavender;
+    color: maroon;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
+}
+
+
+.header h1 {
+    padding-top: 10px;
+    margin: 0 0 20px 0;
+}
+
+.header h3 {
+    padding-bottom: 10px;
+}
+
+h1{
+    margin: 20px 0;
+    font-size: 1.5rem;
+}
+
+h3{
+    margin: 10px 0;
+}
+
+p{
+    margin: 10px 0;
+}
+
+.header{
+    background-color: powderblue;
+    text-align: right;
+}
+
+.container {
+    width: 90vw;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+img{
+    margin-top: -10px;
+    width: 90vw;
+    height: 25vw;
+    object-fit:cover;
+}
+
+.subheader {
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+    margin-top: -5px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+    margin-top: -5px;
+}
+
+form>:nth-child(n){
+    margin-right: 20px;
+}
+.subheader>:first-child{
+    margin-right: 20px;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10vw;
+    background-color: lightgoldenrodyellow;
+}
+
+.main p, h1{
+    margin-left: 20px;
+}
+
+.footer{
+    background-color: powderblue;
+    display: flex
+}
+
+.footer>:nth-child(n){
+    margin-left: 20px;
+    margin-right: 80px;
+}
+
+ul>li>ol>li{
+    margin-left: 40px;
+}
+
+input{
+    padding: 5px;
+}
