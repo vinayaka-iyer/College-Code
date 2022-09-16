@@ -7,8 +7,9 @@ int main(){
 
     cout << binaryToDecimal(101) << endl;
     cout << decimalToBinary(7) << endl;
+    cout << signedDecimalToBinary(-7) << endl;
     cout << factorial(4) << endl;
-    cout << binaryAddition(10100100,01101000) << endl;
+    cout << binaryAddition(11111111,11000010) << endl;
     cout << signedBinaryAddition(11100111,11100010) << endl;
 
 }
