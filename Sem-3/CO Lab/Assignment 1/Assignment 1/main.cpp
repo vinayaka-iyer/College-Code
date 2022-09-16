@@ -1,5 +1,5 @@
 #include "my_functions.h"
-#include<iostream>
+#include<bits/stdc++.h>
 using namespace std;
 
 
@@ -8,7 +8,7 @@ int main(){
     cout << binaryToDecimal(101) << endl;
     cout << decimalToBinary(7) << endl;
     cout << factorial(4) << endl;
-    cout << binaryAddition(101001,110000) << endl;
+    cout << binaryAddition(10100100,01101000) << endl;
+    cout << signedBinaryAddition(11100111,11100010) << endl;
 
-    return 0;   
 }

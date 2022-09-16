@@ -1,9 +1,8 @@
-// header files
-#include<iostream>
-#include<math.h>
+//Header files
+#include<bits/stdc++.h>
 using namespace std;
 
-// binary to decimal
+//Binary to decimal
 int binaryToDecimal(int n){
     int i = 0, ans = 0 ;
 
@@ -22,7 +21,7 @@ int binaryToDecimal(int n){
     return ans;
 }
 
-//decimal to binary
+//Decimal to binary
 int decimalToBinary(int n){
     int ans  = 0;
     int i = 0;
@@ -36,7 +35,7 @@ int decimalToBinary(int n){
     return ans;
 }
 
-//factorial
+//Factorial
 int factorial(int n){
     if(n<=1){
         return 1;
@@ -54,3 +53,44 @@ int binaryAddition(int a, int b){
     int ans = decimalToBinary(c%256);
     return ans;
 }
+
+//Signed 8-bit binary to decimal
+int signedBinaryToDecimal(int n){
+    int decimal = 0, i = 0, remainder;
+    //Two's Compliment.
+    //n = ~n + 1;
+    //Conversion to Decimal.
+    while (n != 0){
+        remainder = n % 10;
+        n /= 10;
+        decimal += remainder * pow(2,i);
+        ++i;
+    }
+    decimal = (decimal + 128)%256 - 128;
+    return decimal;
+}
+
+//Signed 8-bit decimal to binary
+int signedDecimalToBinary(unsigned int dec){
+    char binary[9] = {0}; 
+    int i = 8; // subscript of current character
+    do 
+    {
+        binary[--i] = '0' + dec % 2;
+        dec /= 2;
+    } while (dec);
+    int ans = atoi(binary);
+    return ans;
+}
+
+//Signed 8-bit Binary Addition
+int signedBinaryAddition(int a, int b){
+    int num_a = signedBinaryToDecimal(a);
+    int num_b = signedBinaryToDecimal(b);
+    int c = num_a+num_b;
+    int ans = signedDecimalToBinary(c);
+    return ans;
+}
+
+
+
