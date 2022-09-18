@@ -96,6 +96,3 @@ int signedBinaryAddition(int a, int b){
     int ans = signedDecimalToBinary(c);
     return ans;
 }
-
-
-
