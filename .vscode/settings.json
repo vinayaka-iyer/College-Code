@@ -4,6 +4,7 @@
         "Stack_Array.C": "cpp",
         "Stack_LinkedList.C": "cpp",
         "iostream": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "functional": "c"
     }
 }

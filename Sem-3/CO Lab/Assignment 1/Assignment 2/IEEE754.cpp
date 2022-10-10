@@ -19,7 +19,6 @@ typedef union {
     struct
     {
  
-        // Order is important.Here the members of the union data structureuse the same memory (32 bits).The ordering is taken from the LSB to the MSB.
         unsigned int mantissa : 23;
         unsigned int exponent : 8;
         unsigned int sign : 1;
@@ -47,7 +46,7 @@ int main()
     myfloat var;
  
     // Get the real value
-    var.f = -6.5;
+    var.f = -12.5;
  
     // Get the IEEE floating point representation
     printf("IEEE 754 representation of %f is : \n",
