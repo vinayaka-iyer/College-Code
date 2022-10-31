@@ -77,7 +77,7 @@ bool areBracketsBalanced(char exp[])
 // Driver code
 int main()
 {
-    char exp[100] = "{()}[]";
+    char exp[100] = "{()(";
  
     // Function call
     if (areBracketsBalanced(exp))

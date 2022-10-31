@@ -1,4 +1,3 @@
-// C program for merge sort on doubly linked list   
 #include<stdio.h>   
 #include<stdlib.h>   
 struct Node   
@@ -12,15 +11,15 @@ struct Node *split(struct Node *head);
 // Function to merge two linked lists   
 struct Node *merge(struct Node *first, struct Node *second)   
 {   
-    // If first linked list is empty   
+    
     if (!first)   
         return second;   
     
-    // If second linked list is empty   
+    
     if (!second)   
         return first;   
     
-    // Pick the smaller value   
+      
     if (first->data < second->data)   
     {   
         first->next = merge(first->next,second);   
@@ -52,8 +51,7 @@ struct Node *mergeSort(struct Node *head)
     return merge(head,second);   
 }   
     
-// A utility function to insert a new node at the   
-// beginning of the doubly linked list   
+// A utility function to insert a new node at the beginning of the doubly linked list   
 void insert(struct Node **head, int data)   
 {   
     struct Node *temp =   
@@ -70,19 +68,18 @@ void insert(struct Node **head, int data)
     }   
 }   
     
-// A utility function to print a doubly linked list in   
-// both forward and backward directions   
+// A utility function to print a doubly linked list in both forward and backward directions   
 void print(struct Node *head)   
 {   
     struct Node *temp = head;   
-    printf("\nForward Traversal using next poitner\n");   
+    printf("\nForward Traversal\n");   
     while (head)   
     {   
         printf("%d ",head->data);   
         temp = head;   
         head = head->next;   
     }   
-    printf("\nBackward Traversal using prev pointer\n");   
+    printf("\nBackward Traversal\n");   
     while (temp)   
     {   
         printf("%d ", temp->data);   
@@ -98,8 +95,7 @@ void swap(int *A, int *B)
     *B = temp;   
 }   
     
-// Split a doubly linked list (DLL) into 2 DLLs of   
-// half sizes   
+// Split a doubly linked list (DLL) into 2 DLLs of half sizes   
 struct Node *split(struct Node *head)   
 {   
     struct Node *fast = head,*slow = head;   
@@ -119,13 +115,12 @@ int main(void)
     struct Node *head = NULL;   
     int data;  
     char ch;  
-        /*  Perform tree operations  */  
         do      
         {  
-            printf("\nSelect one of the operations::");  
-            printf("\n1. To insert a new node in the Doubly Linked List.");  
-            printf("\n2. To display the nodes of the Doubly Linked List.");  
-            printf("\n3. To perform Merge sort on the Doubly Linked List.\n");  
+            printf("\nSelect one of the operations");  
+            printf("\n1. insert a new node");  
+            printf("\n2. display the nodes");  
+            printf("\n3.perform Merge sort\n");  
   
             int choice;  
             scanf("%d",&choice);              

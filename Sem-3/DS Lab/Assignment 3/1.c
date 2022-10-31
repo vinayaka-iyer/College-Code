@@ -28,7 +28,6 @@ void insert(int data) {
    while(current->next!=NULL)
       current = current->next;
 
-   // Insert link at the end of the list
    current->next = link; 
 }
 
@@ -36,7 +35,6 @@ void display(struct node *head) {
    struct node *ptr = head;
 
    printf("[head] =>");
-   //start from the beginning
    while(ptr != NULL) {        
       printf(" %d =>",ptr->data);
       ptr = ptr->next;
@@ -66,8 +64,6 @@ void split_list() {
 
             while(current->next != NULL)
             current = current->next;
-
-            // Insert link at the end of the list
             current->next = link; 
          }
          list = list->next;
@@ -81,8 +77,6 @@ void split_list() {
             current = odd;
             while(current->next!=NULL)
             current = current->next;
-
-            // Insert link at the end of the list
             current->next = link; 
 
          }

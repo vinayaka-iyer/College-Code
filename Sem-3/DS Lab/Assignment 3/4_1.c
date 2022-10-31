@@ -55,6 +55,6 @@ int main()
 {
     create();
     Display(poly);
-    printf("%ld\n", Eval(poly, 1));
+    printf("Result: %ld\n", Eval(poly, 2));
     return 0;
 }
